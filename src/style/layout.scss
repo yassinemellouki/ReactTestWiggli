@@ -1,0 +1,22 @@
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  background: gray;
+  flex: 1;
+  header, footer {
+    flex: 1;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+  }
+  footer {
+  }
+  .layout-content {
+    flex: 7;
+    align-items: center;
+    justify-content: center;
+  }
+}
