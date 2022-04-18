@@ -1,10 +1,17 @@
 import React from "react";
 import { AppDataConsumer } from "../context/appData";
+import Card from "../components/card";
 
-const Home = () => {
+const Home = ({store, actions}) => {
+
+  const {pokemons} = store;
   return (
     <div className="page-content">
-      <h2>Home</h2>
+      <div className="cards-wrapper">
+        {
+          pokemons.map((pokemon, i) => (<Card name={pokemon.name} url={pokemon.url}/>))
+        }
+      </div>
     </div>
   );
 };

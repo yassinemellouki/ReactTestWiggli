@@ -25,8 +25,7 @@ class AppDataProvider extends Component {
   getPokemons = (hasParams) => {
     axios
       .get(API)
-      .then((data) => {
-        console.log("data", data);
+      .then(({data}) => {
         this.setState({ pokemons: data.results, loading: false});
       })
       .catch((err) => {

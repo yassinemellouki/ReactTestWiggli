@@ -1,0 +1,38 @@
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .card {
+    background-color: #26266e;
+    background-image: url(http://images6.fanpop.com/image/photos/33100000/Ash-Pokemon-cute-hot-cartoon-boys-33145015-650-653.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 30%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: #1321359e 1px 1px 13px 0px;
+    border-radius: 8px;
+    transition: transform 0.6s;
+    position: relative;
+    &:before {
+      content:"";
+      position: absolute;
+      top: 0; right: 0; left: 0; bottom: 0;
+      background-color: #000000a1;
+      z-index: 0;
+    }
+    &:hover {
+      transform: scale(1.4);
+      z-index: 1;
+    }
+    p {
+      z-index: 2;
+    }
+  }
+}
